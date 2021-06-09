@@ -1,0 +1,31 @@
+PUT http://localhost:5050/rest/http/push
+Accept: */*
+Content-Type: application/json
+
+{
+  "notification": {
+    "title": "Спокойной ночи, малыши!",
+    "body": "Начало в 21:00",
+    "icon": "https://yt3.ggpht.com/ytc/AAUvwnjMIeEHQKyMIQb2E0MP-DrVVZ5yjCyc4fLIL-yH=s176-c-k-c0x00ffffff-no-rj",
+    "click_action": "https://www.youtube.com/channel/UCoVS2PU1QJpXrO9oTyke2cw",
+    "ttlInSeconds": 60000
+  },
+  "to": "csnajAvR58g:APA91bHOC9p03s6S4dDHN3oqkbbS_MmJpQGdaS825qwNo_fn4SA0K3E_BBETAybD807oVpzhKYmZ8bBJV1dsJEDfTdKMvlEPuknYE2pdCFhv93MqKrP94_Ks-y4CxuOVXeCcqF-I8S1i"
+}
+###
+PUT http://localhost:5050/rest/xmpp/push
+Accept: */*
+Content-Type: application/json
+
+{
+  "notification": {
+    "title": "Спокойной ночи, малыши!",
+    "body": "Начало в 21:00",
+    "icon": "https://yt3.ggpht.com/ytc/AAUvwnjMIeEHQKyMIQb2E0MP-DrVVZ5yjCyc4fLIL-yH=s176-c-k-c0x00ffffff-no-rj",
+    "click_action": "https://www.youtube.com/channel/UCoVS2PU1QJpXrO9oTyke2cw",
+    "ttlInSeconds": 60000
+  },
+  "to": "fXoLVsrGtgk:APA91bHr7KXTs2zITyeDj3LkidrefDQAelG0TVEy2-TrhOk_s--nfva88CmsyWaod876VOQNeqRdHcTkk1dXdK7yCh7nIuJScwIB2_eluFDVDwLLKOAebFkh35ooACxY9SvdZpYatVKl"
+}
+###
+
