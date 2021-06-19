@@ -23,8 +23,8 @@ import java.util.logging.Logger;
 public class HttpFcmService {
 
     public HttpFcmService(FcmSettings settings) {
-        Path p = Paths.get(settings.getServiceAccountFile());
-        try (InputStream serviceAccount = Files.newInputStream(p)) {
+        try (InputStream serviceAccount = this.getClass().getClassLoader().getResourceAsStream(settings.getServiceAccountFile())) {
+            assert serviceAccount != null;
             FirebaseOptions options = FirebaseOptions.builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                     .build();
